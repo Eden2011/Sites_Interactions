@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    z-index: 355653236512;/* petit probleme avec le texte qui voulait pas se mettre en avant, donc abus de chiffres */
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    margin: 50px;
+}
+
+fieldset{
+    padding: 15px;
+}
+
+label{
+    margin-left: 15px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+.burger-menu {
+    /*création de la barre dans laquelle on mettra le menu*/
+    z-index: 999;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+}
+
+.burger-icon {
+    cursor: pointer;
+}
+
+.bar {
+    /*creation de la barre du menu*/
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+section {
+    height: 100vh;
+}
+
+.marge {
+    padding-top: 50px;
+}

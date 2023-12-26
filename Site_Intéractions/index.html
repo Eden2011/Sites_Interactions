@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Site_Intéractions/index.html">
+</head>
+<body>
+    
+    <section class="acceuil" id="accueil">
+        <div class="burger-menu"><!-- on créé une div pour le menu -->
+            <div class="burger-icon" id="burger-icon"><!-- on créé l'icône du menu qui sera constitué de 3 barres -->
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <button id="darkmode">Darkmode</button><!-- ajout d'un bouton pour le darkmode -->
+            </div>
+            <ul class="menu" id="menu"><!-- on remplit le menu avec ici: accueil, albums et un formulaire -->
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#slider">Albums</a></li>
+                <li><a href="formulaire/form.html">Formulaire</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+
+    <section class="slider" id="slider"><!-- création du slider -->
+        <div class="button-container">
+            <button class="bt l" id="slideL"><p>&lt;</p></button><!-- création du bouton gauche du slider (avec &lt; parce que < ça fonctionne pas) -->
+            <button class="bt" id="slideR"><p>></p></button><!-- création du bouton droit du slider -->
+        </div>
+        <swiper-container id="swipe" class="mySwiper" navigation="true"> <!-- les différents slides avec carousels dans chaque slide -->
+            <swiper-slide id="slide1">
+                <h3>Bring Me The Horizon Albums : </h3><!-- titre du slide -->
+                <div class="carousel">
+                    <img id= "bmth" src="img/bmth there is a hell.jpg" alt="image_albums">
+                    <!-- je sais pas pourquoi mais le carousel se lance pas tant que je suis pas allé sur le slide2-->
+                </div>
+            </swiper-slide>
+            <swiper-slide id="slide2">
+                <h3>Architects Albums : </h3>
+                <div class="carousel">
+                    <img id= "architects" src="img/arch_aoghau.jpg" alt="image_albums">
+                </div>
+            </swiper-slide>
+            <swiper-slide id="slide3">
+                <h3>Royal Blood Albums : </h3>
+                <div class="carousel">
+                    <img id= "royalblood" src="img/RB_rb.jpg" alt="image_albums">
+                </div>
+            </swiper-slide>
+            <swiper-slide id="slide4">
+                <h3>Waterparks Albums : </h3>
+                <div class="carousel">
+                    <img id= "waterparks" src="img/waterparks_double_dare.png" alt="image_albums">
+                </div>
+            </swiper-slide>
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

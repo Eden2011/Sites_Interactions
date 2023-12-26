@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}/* on fait en sorte que le scroll sur la page soit régulier */
+
+body {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;/* on cache l'axe x */
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/albums_colors.png);
+}/* mise en place du body */
+
+
+.burger-menu {
+    /*création de la barre dans laquelle on mettra le menu*/
+    z-index: 999;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+}
+
+.burger-icon {
+    cursor: pointer;/* lorsque le curseur de souris est sur le menu burger il devient une main */
+}
+
+.bar {
+    /*creation de la barre du menu*/
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+
+swiper-container {/* contenu du slider */
+    height: 100vh;
+    width: 600vw;
+    display: flex;
+    flex-direction: row;
+    transition: 0.43s;
+}
+
+swiper-slide {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    object-fit: cover;
+    width: 520px;
+    height: 500px;
+}
+
+.bt {
+    background: none;
+    height: 100px;
+    width: 100px;
+    border: none;
+    transition: 0.5s all;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    margin: 100px;
+}
+
+.l {
+    opacity: 0;
+}
+
+
+.button-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p {
+    color: purple;
+    text-wrap: nowrap;
+    font-size: 100px;
+    transition: 0.5s;
+
+}
+
+p:hover {
+    color: rgb(199, 44, 199);
+    transition: 0.5s;
+    animation: move 1s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px);
+        color: purple;
+
+    }
+
+    50% {
+        transform: translate(10px);
+        color: rgb(199, 44, 199);
+    }
+
+    100% {
+        transform: translate(0px);
+        color: purple;
+    }
+}/* petite animation quand on met la souris sur les fleches du slider */
+
+section {
+    height: 100vh;
+}
+
+.marge { 
+    padding-top: 50px;
+}
+

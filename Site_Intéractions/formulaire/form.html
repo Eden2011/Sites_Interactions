@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="burger-menu"> <!-- on créé une div pour le menu -->
+        <div class="burger-icon" id="burger-icon"> <!-- on créé l'icône du menu qui sera constitué de 3 barres -->
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <button id="darkmode">Darkmode</button><!-- ajout d'un bouton pour le darkmode -->
+        </div>
+        <ul class="menu" id="menu"> <!-- on remplit le menu avec ici: accueil, albums et un formulaire -->
+            <li><a href="/Site_Intéractions/index.html">Accueil</a></li>
+            <li><a href="/Site_Intéractions/index.html">Albums</a></li>
+            <li><a href="formulaire/form.html">Formulaire</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <h1>Formulaire</h1>
+    </header>
+    <main>
+        <!--on annonce au code qu'on va faire un formulaire avec "form"-->
+        <form action="">
+            <label for="pseudo">Prenom</label><!--on applique le label (titre de la case) a la case (input)-->
+            <input type="text" id="pseudo"><!--permet de créer une case, on donne le nom 'pseudo' pour pouvoir l'appliquer au label-->
+            <label for="nom">Nom</label>
+            <input type="text" id="nom">
+            <label for="mail">Mail</label>
+            <input type="email" id="mail"><!--permet de mettre une adresse mail, si l'adresse est mal écrite on aura un message d'erreur-->
+            <label for="mdp">Mdp</label>
+            <input type="password" id="mdp"><!--permet de cacher le mdp avec les petits points-->
+            <input type="color"><!--ajoute des couleurs-->
+            <fieldset>
+                <legend>Select news</legend>
+                <!--fieldset permet de créer la base, select permet de de créer une case où l'on pourra choisir une option-->
+                <select name="" id="select">
+                    <option value="band">Band</option>
+                    <option value="albums">Album release</option>
+                    <option value="merch">Merch drop</option>
+                    <option value="tour">Tour dates</option>
+                    <!--on donne les différentes options possibles-->
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend id="radio">Radio</legend>
+                <label for="f">Femme</label>
+                <input type="radio" name="genre" id="f"><!--radio permet de faire un choix-->
+                <label for="h">Homme</label>
+                <input type="radio" name="genre" id="h">
+                <label for="a">Autre</label>
+                <input type="radio" name="genre" id="a">
+            </fieldset>
+            <fieldset>
+                <legend>Bouton checkbox</legend>
+                <label for="bmth">Bring Me The Horizon</label>
+                <input type="checkbox" name="" id="bmth"><!--checkbox permet de faire plusieurs choix-->
+                <label for="arch">Architects</label>
+                <input type="checkbox" name="" id="arch">
+                <label for="rb">Royal Blood</label>
+                <input type="checkbox" name="" id="rb">
+                <label for="w">Waterparks</label>
+                <input type="checkbox" name="" id="w">
+            </fieldset>
+            <input type="reset"><!--bouton pour réinitialiser les réponses-->
+            <input type="submit" id="submit"><!--bouton pour envoyer les réponses du formulaire-->
+        </form>
+    </main>
+
+
+
+
+    <script src="form.js"></script>
+</body>
+
+</html>
